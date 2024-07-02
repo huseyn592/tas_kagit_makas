@@ -1,0 +1,160 @@
+* {
+  margin: 0 auto;
+  border: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#oyun {
+  background-image: linear-gradient(#ffa17f, #00223e);
+  height: 66.1vh;
+  padding-top: 250px;
+}
+
+#oyun h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+.Buttonlar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  gap: 20px; /* Butonlar arasında boşluk */
+}
+
+.evetBtn, .hayirBtn {
+  width: 150px;
+  height: 70px;
+  border-radius: 50px;
+  font-size: 39px;
+  border: 0;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.evetBtn:hover, .hayirBtn:hover {
+  background-color: black;
+  color: white;
+}
+
+#gameBasladi {
+  display: none;
+  background-image: linear-gradient(#dbe6f6, #c5796d);
+  height: 100vh;
+}
+
+#skorTablosu {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.hands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding-top: 100px;
+}
+
+.hands img {
+  width: 300px;
+  height: 300px;
+}
+
+.robot {
+  transform: scaleX(-1);
+}
+
+.button_game {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.button_game button {
+  width: 80px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.7s;
+}
+
+.button_game button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #oyun {
+    padding-top: 150px;
+    height: auto;
+  }
+
+  #oyun h1 {
+    font-size: 40px;
+  }
+
+  .Buttonlar {
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  .evetBtn, .hayirBtn {
+    width: 120px;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .hands {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hands img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .button_game {
+    flex-direction: column;
+    padding: 50px 0;
+  }
+
+  .button_game button {
+    width: 70px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #oyun h1 {
+    font-size: 30px;
+  }
+
+  .evetBtn, .hayirBtn {
+    width: 100px;
+    height: 50px;
+    font-size: 25px;
+  }
+
+  .hands img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .button_game button {
+    width: 60px;
+    height: 30px;
+  }
+}
