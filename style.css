@@ -12,7 +12,10 @@
 
 #oyun h1 {
   font-size: 50px;
+    font-weight: 200;
+    font-family: poppins;
   text-align: center;
+  color: white;
 }
 
 .Buttonlar {
@@ -20,7 +23,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 200px;
-  gap: 20px; /* Butonlar arasında boşluk */
+  gap: 20px; 
 }
 
 .evetBtn, .hayirBtn {
@@ -79,14 +82,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 0;
+  margin-top: 80px;
 }
 
 .button_game button {
-  width: 80px;
-  height: 50px;
+  width: 140px;
+  height: 80px;
   border-radius: 50%;
-  transition: all 0.7s;
+  transition: all 0.4s;
+  font-size: 17px;
+
 }
 
 .button_game button:hover {
@@ -94,67 +99,100 @@
   color: white;
 }
 
-/* Responsive Design */
+
+
+#winMessage {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1005a9;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+
+/* Responsiv */
+
+
+
+
 @media (max-width: 768px) {
+
+
+
   #oyun {
     padding-top: 150px;
-    height: auto;
+    height: 100vh;
   }
 
   #oyun h1 {
-    font-size: 40px;
+    font-size: 36px;
+    font-weight: 200;
+    font-family: poppins;
   }
 
   .Buttonlar {
-    flex-direction: column;
     padding-top: 100px;
+    gap: 10px;
   }
 
   .evetBtn, .hayirBtn {
     width: 120px;
     height: 60px;
     font-size: 30px;
+    font-family: poppins;
+
+  }
+
+  #skorTablosu {
+    font-size: 20px;
+    flex-direction: flex;
+    gap: 20px;
+    padding-top: 30px;
   }
 
   .hands {
-    flex-direction: column;
+    
+    flex-direction: flex;
     gap: 20px;
   }
 
   .hands img {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 100px;
   }
 
   .button_game {
-    flex-direction: column;
-    padding: 50px 0;
+    flex-direction: flex;
+    padding: 50px 0px ;
+  
   }
 
   .button_game button {
     width: 70px;
     height: 40px;
   }
-}
 
-@media (max-width: 480px) {
-  #oyun h1 {
-    font-size: 30px;
-  }
 
-  .evetBtn, .hayirBtn {
-    width: 100px;
-    height: 50px;
-    font-size: 25px;
-  }
 
-  .hands img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .button_game button {
-    width: 60px;
-    height: 30px;
+  #winMessage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1005a9;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    z-index: 1000;
   }
 }
+
+
