@@ -102,21 +102,6 @@
 
 
 
-#winMessage {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #1005a9;
-  color: white;
-  padding: 20px;
-  border-radius: 10px;
-  font-size: 24px;
-  z-index: 1000;
-}
-
-
 /* Responsiv */
 
 
@@ -182,19 +167,6 @@
 
 
 
-  #winMessage {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #1005a9;
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 24px;
-    z-index: 1000;
-  }
 }
 
 
